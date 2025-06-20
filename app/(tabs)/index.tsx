@@ -65,6 +65,9 @@ export default function Index() {
                   <TrendingCard movie={item} index={index} />
                 )}
                 keyExtractor={(item) => item.movie_id.toString()}
+                contentContainerStyle={{
+                  gap: 16
+                }}
               />
 
               <Text className="text-lg text-white font-bold mt-5 mb-3">Latest Movies</Text>
